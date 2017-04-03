@@ -125,6 +125,7 @@ export default class NpmUtilities {
   static getExecOpts(directory, registry) {
     const opts = {
       cwd: directory,
+      env: process.env,
     };
 
     if (registry) {
